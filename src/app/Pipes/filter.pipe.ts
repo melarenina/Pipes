@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   pure: false
 })
 export class FilterPipe implements PipeTransform {
-
+  
   transform(value: any, filterString: string, propName: string): any {
     if (value.lengt === 0 || filterString === ''){
       return value;
