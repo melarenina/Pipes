@@ -4,6 +4,8 @@
       <label for="serverStatus">Seach Server by Status</label>
       <br />
       <input type="text" id="serverStatus" name="serverStatus" [(ngModel)]="filteredStatus">
+      <br><br>
+      <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
       <hr>
       <ul class="list-group">
         <li
