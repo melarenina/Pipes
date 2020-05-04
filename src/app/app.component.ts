@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  // It will set the app status to stable after 2 seconds
+  appStatus = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('stable');
+    }, 2000);
+  });
   filteredStatus = '';
 
   servers = [
